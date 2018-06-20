@@ -21,7 +21,7 @@ int crypt(char ch) {
 
 int main(int argc, char *argv[]) {
         printf("##################\n");
-        printf("# TinyCripter #\n");
+        printf("# TinyCrypter #\n");
         printf("Devolved By Anonik (c) 2018\n");
         printf("##################\n\n");
         if(argc != 2) {
@@ -35,9 +35,22 @@ int main(int argc, char *argv[]) {
             printf( "[WARNING] Unable to open the file!\n" ); //Impossibile aprire il file
         }
         else
-        {
+        /*{
             int x;
             FILE *new = fopen("crypted.txt","w");
+            while  ( ( x = fgetc( file ) ) != EOF )
+            {
+                fprintf(new, "%d", crypt(x));
+            }
+            fclose(file);
+            fclose(new);
+            printf("\n\a[DONE] Created file crypted.txt.\n");
+        }*/
+
+        //New with .crp
+        {
+            int x;
+            FILE *new = fopen("crypted.crp","w");
             while  ( ( x = fgetc( file ) ) != EOF )
             {
                 fprintf(new, "%d", crypt(x));

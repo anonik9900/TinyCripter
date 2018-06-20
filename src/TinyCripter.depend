@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1529500936 source:c:\users\nicholas impieri\desktop\{dev}\tiny cripter\tinycripter\main.c
+	<stdio.h>
+	<string.h>
+	<math.h>
+
