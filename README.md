@@ -1,5 +1,5 @@
 # TinyCrypter
-Simple Cripter written in C
+Simple Crypter written in C
 
 # How To Use
 
